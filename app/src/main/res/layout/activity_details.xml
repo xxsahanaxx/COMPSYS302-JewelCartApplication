@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dp"
+        app:fillColor="#FFFFFFFF"
+        app:pageColor="#00000000"
+        app:radius="6dp"
+        app:slideInterval="3000"
+        app:strokeColor="#FF777777"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carouselView"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="60dp"
+        android:text="Name"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/ProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductName"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingLeft="170dp"
+        android:text ="Price"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_below="@id/ProductPrice"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60dp"
+        android:layout_below="@id/ProductPrice"
+        android:text="Product Details:"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/ProductID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductPrice"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="60dp"
+        android:text="ID"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ProductMaterial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductID"
+        android:layout_marginTop="8dp"
+        android:text="Material"
+        android:paddingLeft="60dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/ProductRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ProductMaterial"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="60dp"
+        android:text="Rating"
+        android:textSize="18sp" />
+
+</RelativeLayout>
